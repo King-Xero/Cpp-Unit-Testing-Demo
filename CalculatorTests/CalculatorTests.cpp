@@ -5,14 +5,14 @@
 
 TEST_CASE("When Add is called with 2 and 3, will return 5", "[Add]")
 {
-	CCalculator cCalculator;
+	CCalculator cCalculator(new CAddition, new CSubtraction);
 
 	REQUIRE(cCalculator.Add(2, 3) == 5);
 }
 
 TEST_CASE("When Add is called with 7 and 6, will return 13", "[Add]")
 {
-	CCalculator cCalculator;
+	CCalculator cCalculator(new CAddition, new CSubtraction);
 
 	REQUIRE(cCalculator.Add(7, 6) == 13);
 }
