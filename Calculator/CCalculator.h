@@ -8,7 +8,7 @@ private:
 	CAddition*		m_pAddition = nullptr;
 	CSubtraction*	m_pSubtraction = nullptr;
 public:
-	CCalculator();
+	CCalculator() = delete;
 	CCalculator(CAddition* addition, CSubtraction* subtraction);
 	~CCalculator();
 

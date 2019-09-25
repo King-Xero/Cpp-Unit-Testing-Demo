@@ -1,15 +1,12 @@
 #include "CCalculator.h"
 #include "CAddition.h"
+#include <exception>
 
-
-CCalculator::CCalculator()
-{
-}
 
 CCalculator::CCalculator(CAddition* addition, CSubtraction* subtraction)
 {
-	m_pAddition = addition;
-	m_pSubtraction = subtraction;
+	addition != nullptr ? m_pAddition = addition : throw std::exception("addition is nullptr");
+	subtraction != nullptr ? m_pSubtraction = subtraction : throw std::exception("subtraction is nullptr");
 }
 
 
@@ -24,5 +21,5 @@ int CCalculator::Add(int iA, int iB)
 
 int CCalculator::Subtract(int iA, int iB)
 {
-	return iA - iB;
+	return m_pSubtraction->DoWork(iA, iB);
 }

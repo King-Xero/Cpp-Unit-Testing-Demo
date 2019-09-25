@@ -203,9 +203,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="catch.hpp" />
+    <ClInclude Include="fakeit.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CalculatorTests.cpp" />
+    <ClCompile Include="TestsMain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Calculator\Calculator.vcxproj">
