@@ -206,7 +206,9 @@
     <ClInclude Include="fakeit.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AdditionTests.cpp" />
     <ClCompile Include="CalculatorTests.cpp" />
+    <ClCompile Include="SubtractionTests.cpp" />
     <ClCompile Include="TestsMain.cpp" />
   </ItemGroup>
   <ItemGroup>

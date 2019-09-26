@@ -10,5 +10,5 @@ CSubtraction::~CSubtraction()
 
 int CSubtraction::DoWork(int iA, int iB)
 {
-	return 0;
+	return iA - iB;
 }
